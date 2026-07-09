@@ -4,24 +4,13 @@
  * Ubah DB_USER / DB_PASS sesuai pengaturan XAMPP Anda
  */
 
-// Load environment variables dari .env jika ada
-if (file_exists(__DIR__ . '/../.env')) {
-    $env_lines = file(__DIR__ . '/../.env', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-    foreach ($env_lines as $line) {
-        if (strpos(trim($line), '#') === 0) continue;
-        list($key, $value) = explode('=', $line, 2) + ['', ''];
-        $_ENV[trim($key)] = trim($value);
-    }
-}
-
-// Gunakan environment variable atau fallback ke default
-define('DB_HOST', $_ENV['DB_HOST'] ?? getenv('DB_HOST') ?? 'localhost');
-define('DB_USER', $_ENV['DB_USER'] ?? getenv('DB_USER') ?? 'root');
-define('DB_PASS', $_ENV['DB_PASS'] ?? getenv('DB_PASS') ?? '');
-define('DB_NAME', $_ENV['DB_NAME'] ?? getenv('DB_NAME') ?? 'electromart');
+define('DB_HOST', 'localhost');
+define('DB_USER', 'root');
+define('DB_PASS', '');
+define('DB_NAME', 'electromart');
 
 // Base URL aplikasi (tanpa trailing slash)
-define('BASE_URL', $_ENV['BASE_URL'] ?? getenv('BASE_URL') ?? 'http://localhost/UASWeb');
+define('BASE_URL', 'http://localhost/UASWeb');
 
 // Path absolut root project
 define('ROOT_PATH', dirname(__DIR__));
