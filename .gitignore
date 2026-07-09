@@ -1,8 +1,0 @@
-.env
-.env.local
-.DS_Store
-node_modules/
-*.log
-.vscode/
-.idea/
-config/db.php.local
