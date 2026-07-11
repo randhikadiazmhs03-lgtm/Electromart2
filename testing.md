@@ -4,7 +4,7 @@
 - Nama Website: Electromart
 - Versi: 1.0
 - Tanggal Pengujian: 2026-07-10
-- Penguji: [Nama Penguji]
+- Penguji: Della Alivia Wijaya
 
 ## Tujuan Pengujian
 Dokumen ini bertujuan untuk mencatat hasil pengujian website secara sistematis terhadap fitur-fitur utama, termasuk akses pengguna, manajemen data, form validation, serta responsivitas tampilan.
